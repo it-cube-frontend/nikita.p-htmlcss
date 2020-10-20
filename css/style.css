@@ -2,6 +2,9 @@
     --basic-black: #000000;
     --basic-white: #ffffff;
     --light-grey: #EEEEEE ;
+    --dark-green: #00CA74;
+    --dark-red:#FB565A;
+    --dark-yellow:#EFC849;
   }
 body{
     font-family: "Roboto", Arial, sans-serif ;
@@ -14,27 +17,76 @@ body{
 }
 
 a {
-    text-decoration: none;
-  }
+ text-decoration: none;
+}
   
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+img {
+ max-width: 100%;
+ height: auto;
+}
 
-  .navigation{
-    font-size: 16px;
-    line-height: 30px;
-    background-color: var(--light-grey) ;
-    font-style: normal;
-    font-weight: 500;
-  }
-  .basket{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-  }
+.navigation{
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--light-grey) ;
+  font-style: normal;
+  font-weight: 500;
+}
+.basket{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
 
-  
+.site-navigation + li {
+  list-style-type: none ;
+}
+
+header {
+ width: 1440px;
+ height: 545px;
+}
+
+.services-item + h3{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services-item + p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.services-item + button{
+  width: 160px;
+ height: 50px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 18px;
+ color: var(--basic-white);
+}
+.btn1{
+ background-color: var(--dark-green: #00CA74);
+}
+
+.btn2{
+  background-color: var(--dark-red)
+}
+
+.btn3{
+  background-color: var(--dark-yellow)
+}
+
+
+
+
+
+
+
