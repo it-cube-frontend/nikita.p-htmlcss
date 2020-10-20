@@ -63,7 +63,7 @@ header {
   line-height: 24px;
 }
 .services-item + button{
-  width: 160px;
+ width: 160px;
  height: 50px;
  font-family: Roboto;
  font-style: normal;
@@ -73,15 +73,39 @@ header {
  color: var(--basic-white);
 }
 .btn1{
- background-color: var(--dark-green: #00CA74);
+ background-color: var(--dark-green);
+ width: 160px;
+ height: 50px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 18px;
+ color: var(--basic-white);
 }
 
 .btn2{
-  background-color: var(--dark-red)
+ background-color: var(--dark-red);
+ width: 160px;
+ height: 50px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 18px;
+ color: var(--basic-white);
 }
 
 .btn3{
-  background-color: var(--dark-yellow)
+  background-color: var(--dark-yellow);
+  width: 160px;
+ height: 50px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 18px;
+ color: var(--basic-white);
 }
 
 
