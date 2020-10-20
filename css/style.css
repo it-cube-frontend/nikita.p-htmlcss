@@ -11,11 +11,9 @@ body{
     background-color: var(--basic-white) ;
     margin: 0;
     padding: 0;
-    min-width: 1440px;
     font-size: 16px; 
     text-transform: none;
 }
-
 a {
  text-decoration: none;
 }
@@ -40,38 +38,33 @@ img {
   line-height: 30px;
 }
 
-.site-navigation + li {
+.site-navigation li {
   list-style-type: none ;
 }
 
-header {
+.body-header {
  width: 1440px;
  height: 545px;
 }
 
-.services-item + h3{
+.services ul{
+  list-style-type: none ;
+}
+
+.services-item h3{
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
 
-.services-item + p{
+.services-item p{
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
-.services-item + button{
- width: 160px;
- height: 50px;
- font-family: Roboto;
- font-style: normal;
- font-weight: 500;
- font-size: 16px;
- line-height: 18px;
- color: var(--basic-white);
-}
+
 .btn1{
  background-color: var(--dark-green);
  width: 160px;
@@ -82,6 +75,7 @@ header {
  font-size: 16px;
  line-height: 18px;
  color: var(--basic-white);
+ border-radius: 3px;
 }
 
 .btn2{
@@ -94,6 +88,7 @@ header {
  font-size: 16px;
  line-height: 18px;
  color: var(--basic-white);
+ border-radius: 3px;
 }
 
 .btn3{
@@ -106,6 +101,7 @@ header {
  font-size: 16px;
  line-height: 18px;
  color: var(--basic-white);
+ border-radius: 3px;
 }
 
 
