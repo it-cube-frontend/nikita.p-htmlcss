@@ -14,6 +14,9 @@ body{
     font-size: 16px; 
     text-transform: none;
 }
+li{
+  list-style-type: none ;
+}
 a {
  text-decoration: none;
 }
@@ -45,17 +48,9 @@ button{
   line-height: 30px;
 }
 
-.site-navigation li {
-  list-style-type: none ;
-}
-
 .body-header {
  width: 1440px;
  height: 545px;
-}
-
-.services ul{
-  list-style-type: none ;
 }
 
 .services-item h3{
@@ -117,11 +112,16 @@ button{
  font-size: 16px;
  line-height: 24px;
 }
+.p-b{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 .inf-list {
  font-style: normal;
  font-weight: normal;
- list-style-type: none;
 }
 
 .inf-list:before {
