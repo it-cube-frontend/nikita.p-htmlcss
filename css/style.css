@@ -5,25 +5,59 @@
     --dark-green: #00CA74;
     --dark-red:#FB565A;
     --dark-yellow:#EFC849;
+    --grey: #989898;
   }
 body{
-    font-family: "Roboto", Arial, sans-serif ;
-    background-color: var(--basic-white) ;
-    margin: 0;
-    padding: 0;
-    font-size: 16px; 
-    text-transform: none;
+  font-family: "Roboto", sans-serif ;
+  background-color: var(--basic-white) ;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; 
+  text-transform: none;
+  min-width: 960px;
+  text-align: center; 
+  font-weight: normal;
+  line-height: 24px;
 }
-li{
-  list-style-type: none ;
-}
-a {
- text-decoration: none;
-}
- A:link{
- color: var(--basic-black);
+
+header {
+  width: 1440px;
+  height: 545px;
+  background-color: var(--light-grey);
+  color: var(--basic-black) ;
  }
-  
+
+ .nav-list{
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.main-navigation li{
+  display: inline-block ;
+}
+
+li{
+  list-style-type: none
+}
+
+.nav-list a {
+ text-decoration: none;
+ color: var(--basic-black) ;
+ font-weight: 500;
+ line-height: 30px;
+}
+
+a:hover {
+  color: var( --dark-red) ;
+}
+
+a:active{
+  color: var( --grey);
+}
+
 img {
  max-width: 100%;
  height: auto;
@@ -33,27 +67,9 @@ button{
  border: 0;
 }
 
-.navigation{
-  font-size: 16px;
-  line-height: 30px;
-  background-color: var(--light-grey) ;
-  font-style: normal;
-  font-weight: 500;
-}
-.basket{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.body-header {
- width: 1440px;
- height: 545px;
-}
-
 .services-item h3{
+  text-transform: uppercase;
+  align-items: center;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -66,44 +82,27 @@ button{
   font-size: 16px;
   line-height: 24px;
 }
-
-.btn1{
- background-color: var(--dark-green);
+.services-item a{
  width: 160px;
  height: 50px;
- font-family: Roboto;
  font-style: normal;
  font-weight: 500;
  font-size: 16px;
  line-height: 18px;
  color: var(--basic-white);
  border-radius: 3px;
+}
+
+.btn1{
+ background-color: var(--dark-green);
 }
 
 .btn2{
  background-color: var(--dark-red);
- width: 160px;
- height: 50px;
- font-family: Roboto;
- font-style: normal;
- font-weight: 500;
- font-size: 16px;
- line-height: 18px;
- color: var(--basic-white);
- border-radius: 3px;
 }
 
 .btn3{
   background-color: var(--dark-yellow);
-  width: 160px;
- height: 50px;
- font-family: Roboto;
- font-style: normal;
- font-weight: 500;
- font-size: 16px;
- line-height: 18px;
- color: var(--basic-white);
- border-radius: 3px;
 }
 
 .information p{
@@ -126,7 +125,7 @@ button{
 
 .inf-list:before {
   color: var(--dark-red); 
-  content: "—";
+  list-style-type: square;
   padding-right: 10px;
   width: 25px;
   height: 2px;
