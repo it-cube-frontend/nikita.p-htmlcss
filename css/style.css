@@ -17,21 +17,25 @@ body{
   min-width: 960px;
   font-weight: normal;
   line-height: 24px;
+  font-style: normal;
 }
 
 header {
   width: 1440px;
-  height: 545px;
+  height: 114px;
   padding:5px;
   background-color: var(--light-grey);
   color: var(--basic-black) ;
+ }
+ .slides{
+  width: 1440px;
+  height: 431px;
  }
 
  .nav-list{
   text-transform: uppercase;
   font-size: 16px;
   line-height: 30px;
-  font-style: normal;
   font-weight: 500;
 }
 
@@ -79,51 +83,48 @@ button{
 .services-item h3{
   text-transform: uppercase;
   align-items: center;
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
 
 .services-item p{
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
+
 .a-btn{
- font-style: normal;
- font-weight: 500;
- font-size: 16px;
- line-height: 18px;
- color: var(--basic-white);
- border-radius: 3px;
- text-transform: uppercase;
- text-decoration: none;
- text-align: center;
- display: inline-block;
- padding: 5px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 17px 40px 15px 39px;
 }
 
-.btn1{
+.a-btn1--green{
  background-color: var(--dark-green);
  width: 160px;
  height: 50px;
 }
 
-.btn2{
+.a-btn--red{
  background-color: var(--dark-red);
  width: 160px;
  height: 50px;
 }
 
-.btn3{
+.a-btn--yellow{
  background-color: var(--dark-yellow);
  width: 160px;
  height: 50px;
 }
 .information h2{
- font-style: normal;
  font-weight: 500;
  font-size: 45px;
  line-height: 45px;
@@ -131,33 +132,28 @@ button{
  align-items: center;
 }
 .information p{
- font-style: normal;
  font-weight: bold;
  font-size: 16px;
  line-height: 24px;
 }
 .p-b{
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
 
 .inf-list {
- font-style: normal;
  font-weight: normal;
 }
 
 .inf-list:before {
   color: var(--dark-red);
-  list-style-type: square;
   padding-right: 10px;
   width: 25px;
   height: 2px;
 }
 
 .achievement h3{
- font-style: normal;
  font-weight: bold;
  font-size: 16px;
  line-height: 24px;
@@ -165,14 +161,12 @@ button{
 
 .achievement-list p{
   list-style-type: none;
-  font-style: normal;
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
 }
 
  h3{
- font-style: normal;
  font-weight: normal;
  font-size: 16px;
  line-height: 18px;
@@ -185,13 +179,11 @@ button{
 }
 
 .map-adds h2{
- font-style: normal;
  font-weight: bold;
  font-size: 18px;
  line-height: 30px;
 }
 .map-adds{
- font-style: normal;
  font-weight: normal;
  font-size: 16px;
  line-height: 18px;
@@ -202,10 +194,25 @@ button{
  height: 50px;
  background-color: var(--dark-red);
  color: var(--basic-white);
- font-style: normal;
  font-weight: 500;
  font-size: 16px;
  line-height: 18px;
+}
+
+.str{
+ font-weight: bold;
+ font-size: 36px;
+ line-height: 36px;
+}
+
+.str+p{
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 22px;
+}
+
+.sedona{
+  
 }
 
 
