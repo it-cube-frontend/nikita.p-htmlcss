@@ -12,7 +12,7 @@
     --red-active:#E74246;
     --green-active:#00BC6C;
     --yellow-active: #EAB534;
-    --dark-grey: #666666; 
+    --dark-grey: #666666;
   }
 body{
   font-family: "Roboto", sans-serif ;
@@ -115,14 +115,14 @@ button{
   display: inline-block;
 }
 
-.a-btn>p:hover{
-  opacity: 0.3;
-  mix-blend-mode: normal;
+.a-btn:active {
+  color: rgba(255, 255, 255, .3);
+  /* mix-blend-mode: normal; */
 }
-.a-btn>p:active{
+/* .a-btn>p:active{
   color: var(--basic-white);
   opacity: 1 ;
-}
+} */
 .a-btn--green{
  background-color: var(--dark-green);
  width: 160px;
@@ -232,17 +232,29 @@ button{
  line-height: 22px;
 }
 
+.s-network li{
+ display: inline-block;
+ width: 81px;
+ height: 81px;
+ background: linear-gradient(0deg, #E1E1E1, #E1E1E1);
+ border-radius: 50px;
+ background-color: var(--light-grey);
+}
+
+
+
 /*2page*/
 
 .templates-shop{
   background-color: var(--light-grey);
   width: 1440;
 }
-.templates-shop{
+.templates-shop h1{
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   align-items: center;
+  margin-top: 100px;
 
 }
 
@@ -253,6 +265,7 @@ button{
 }
 
 .pp-text h3{
+ text-transform: uppercase;
  font-weight: bold;
  font-size: 18px;
  line-height: 30px;
@@ -269,10 +282,41 @@ button{
  color: var(--dark-grey);
 }
 
-.pp-text button{
+.pp-text a{
+  color: var(--basic-white);
   width: 200px;
   height: 50px;
   background-color:var(--dark-red);
   border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 80px;
+}
+
+.pagination li{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--light-grey);
+  border-radius: 3px;
+}
+
+.one{
+ background: rgba(0, 0, 0, 0.0001);
+ border: 3px solid #DBDBDB;
+}
+
+.next{
+  width: 260px;
+  height: 50px;
 }
 
