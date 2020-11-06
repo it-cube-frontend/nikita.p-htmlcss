@@ -6,6 +6,13 @@
     --dark-red:#FB565A;
     --dark-yellow:#EFC849;
     --grey: #989898;
+    --green-hover: #00AA62;
+    --yellow-hover: #E5A722;
+    --red-hover: #D7373B;
+    --red-active:#E74246;
+    --green-active:#00BC6C;
+    --yellow-active: #EAB534;
+    --dark-grey: #666666; 
   }
 body{
   font-family: "Roboto", sans-serif ;
@@ -28,8 +35,8 @@ header {
   color: var(--basic-black) ;
  }
  .slides{
-  width: 1440px;
-  height: 431px;
+  background-color: var(--light-grey);
+
  }
 
  .nav-list{
@@ -58,11 +65,13 @@ li{
 }
 
 .nav-list:hover {
-  color: var( --dark-red) ;
+  color: var( --dark-red);
 }
 
 .nav-list:active{
   color: var( --grey);
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
 nav{
   word-spacing: 44px;
@@ -104,59 +113,71 @@ button{
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  padding: 17px 40px 15px 39px;
 }
 
-.a-btn1--green{
+.a-btn>p:hover{
+  opacity: 0.3;
+  mix-blend-mode: normal;
+}
+.a-btn>p:active{
+  color: var(--basic-white);
+  opacity: 1 ;
+}
+.a-btn--green{
  background-color: var(--dark-green);
  width: 160px;
  height: 50px;
 }
-
 .a-btn--red{
- background-color: var(--dark-red);
- width: 160px;
- height: 50px;
+  background-color: var(--dark-red);
+  width: 160px;
+  height: 50px;
+ }
+ .a-btn--yellow{
+  background-color: var(--dark-yellow);
+  width: 160px;
+  height: 50px;
+ }
+
+.a-btn--green:hover{
+  background-color: var(--green-hover);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.a-btn--yellow{
- background-color: var(--dark-yellow);
- width: 160px;
- height: 50px;
+.a-btn--red:hover{
+  background-color: var(--red-hover);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
+
+.a-btn--yellow:hover{
+  background-color: var(--yellow-hover);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.a-btn--green:active{
+  background-color: var(--green-active);
+}
+.a-btn--red:active{
+  background-color: var(--red-active);
+}
+.a-btn--yellow:active{
+  background-color: var(--yellow-active);
+}
+
 .information h2{
  font-weight: 500;
  font-size: 45px;
  line-height: 45px;
- display: flex;
  align-items: center;
 }
 .information p{
- font-weight: bold;
- font-size: 16px;
- line-height: 24px;
-}
-.p-b{
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.inf-list {
  font-weight: normal;
-}
-
-.inf-list:before {
-  color: var(--dark-red);
-  padding-right: 10px;
-  width: 25px;
-  height: 2px;
-}
-
-.achievement h3{
- font-weight: bold;
  font-size: 16px;
  line-height: 24px;
+}
+
+.infirmation .bold-text{
+ font-weight: bold;
 }
 
 .achievement-list p{
@@ -211,10 +232,47 @@ button{
  line-height: 22px;
 }
 
-.sedona{
-  
+/*2page*/
+
+.templates-shop{
+  background-color: var(--light-grey);
+  width: 1440;
+}
+.templates-shop{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  align-items: center;
+
 }
 
+.pp-text{
+  background-color: var(--light-grey);
+  width: 360px;
+  height: 231px;
+}
 
+.pp-text h3{
+ font-weight: bold;
+ font-size: 18px;
+ line-height: 30px;
+ align-items: center;
+ text-align: center;
+}
 
+.pp-text p{
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 18px;
+ align-items: center;
+ text-align: center;
+ color: var(--dark-grey);
+}
+
+.pp-text button{
+  width: 200px;
+  height: 50px;
+  background-color:var(--dark-red);
+  border-radius: 3px;
+}
 
