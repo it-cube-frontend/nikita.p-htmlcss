@@ -27,6 +27,14 @@ body{
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 header {
   width: 1440px;
   height: 114px;
@@ -36,12 +44,10 @@ header {
  }
  .slides{
   background-color: var(--light-grey);
-
  }
 
  .nav-list{
   text-transform: uppercase;
-  font-size: 16px;
   line-height: 30px;
   font-weight: 500;
 }
@@ -99,13 +105,10 @@ button{
 
 .services-item p{
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .a-btn{
   font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
   border-radius: 3px;
@@ -114,6 +117,7 @@ button{
   text-align: center;
   display: inline-block;
 }
+
 
 .a-btn:active {
   color: rgba(255, 255, 255, .3);
@@ -124,20 +128,21 @@ button{
   opacity: 1 ;
 } */
 .a-btn--green{
- background-color: var(--dark-green);
- width: 160px;
- height: 50px;
+  background-color: var(--dark-green);
+  width: 160px;
+  height: 50px;
 }
 .a-btn--red{
   background-color: var(--dark-red);
   width: 160px;
   height: 50px;
- }
- .a-btn--yellow{
+}
+
+.a-btn--yellow{
   background-color: var(--dark-yellow);
   width: 160px;
   height: 50px;
- }
+}
 
 .a-btn--green:hover{
   background-color: var(--green-hover);
@@ -170,14 +175,15 @@ button{
  line-height: 45px;
  align-items: center;
 }
-.information p{
+.information>p:first-child{
  font-weight: normal;
- font-size: 16px;
- line-height: 24px;
 }
 
-.infirmation .bold-text{
+.bold-text{
  font-weight: bold;
+ font-size: 16px;
+ line-height: 24px;
+ text-transform: uppercase;
 }
 
 .achievement-list p{
@@ -187,10 +193,10 @@ button{
   line-height: 64px;
 }
 
- h3{
+.achievement-list h3{
  font-weight: normal;
- font-size: 16px;
  line-height: 18px;
+ font-size: 16px;
 }
 
 .map-adds{
@@ -206,7 +212,6 @@ button{
 }
 .map-adds{
  font-weight: normal;
- font-size: 16px;
  line-height: 18px;
 }
 
@@ -220,6 +225,10 @@ button{
  line-height: 18px;
 }
 
+.map-adds button:hover{
+  background-color: var(--red-hover);
+}
+
 .str{
  font-weight: bold;
  font-size: 36px;
@@ -228,20 +237,41 @@ button{
 
 .str+p{
  font-weight: normal;
- font-size: 16px;
  line-height: 22px;
 }
 
 .s-network li{
- display: inline-block;
+  display: inline-block;
+}
+
+.s-network-list{
  width: 81px;
  height: 81px;
  background: linear-gradient(0deg, #E1E1E1, #E1E1E1);
  border-radius: 50px;
- background-color: var(--light-grey);
 }
 
+.icon-vk{
+  padding: 33px 28px 33px 27px;
+}
+.icon-fb{
+  padding: 31px 34px 28px 35px;
+}
+.icon-inst{
+  padding: 30px;
+}
 
+.s-network-list:hover{
+  background: linear-gradient(0deg, #E74246, #E74246);
+}
+
+.s-network-list:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B);
+}
+
+.s-network-list>.icon:active{
+  opacity: 0.3;
+}
 
 /*2page*/
 
@@ -275,7 +305,6 @@ button{
 
 .pp-text p{
  font-weight: normal;
- font-size: 16px;
  line-height: 18px;
  align-items: center;
  text-align: center;
@@ -289,7 +318,6 @@ button{
   background-color:var(--dark-red);
   border-radius: 3px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   align-items: center;
   text-align: center;
@@ -299,7 +327,6 @@ button{
 
 .pagination li{
   font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
