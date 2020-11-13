@@ -112,10 +112,11 @@ li{
   mix-blend-mode: normal;
   opacity: 0.3;
 }
-nav{
+
+/*nav{
   word-spacing: 44px;
   margin: 76px;
-}
+}*/
 
 img {
  max-width: 100%;
