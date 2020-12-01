@@ -56,6 +56,8 @@ header{
  .main-navigation{
   display: grid;
   grid-template-columns: 200px 1fr 200px;
+  align-items: flex-end;
+  min-height: 120px;
   /* grid-template-rows: 114px; */
 
 }
@@ -66,9 +68,9 @@ header{
 }
 
 .basket{
-  grid-column: 3/4;
+  /* grid-column: 3/4;
   grid-row: 1;
-  text-align: center;
+  text-align: center; */
 }
 
 .header-logo{
@@ -132,7 +134,7 @@ li{
  font-weight: 500;
  line-height: 30px;
  text-transform: uppercase;
- margin-top: 74px;
+ /* margin-top: 74px; */
 }
 
 .nav-list:hover {
@@ -228,6 +230,11 @@ button{
 }
 .a-btn--yellow:active{
   background-color: var(--yellow-active);
+}
+
+.info-block {
+  display: grid;
+  grid-template-columns: 1fr 360px;
 }
 
 .information h2{
