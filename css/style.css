@@ -14,18 +14,16 @@
     --yellow-active: #EAB534;
     --dark-grey: #666666;
   }
+
 body{
   font-family: "Roboto", sans-serif ;
   background-color: var(--basic-white) ;
-  margin: 0 auto;
   font-size: 16px;
   text-transform: none;
-  width: 1440px;
   font-weight: normal;
   line-height: 24px;
   font-style: normal;
-  display: grid;
-  grid-template-rows: 114px 1fr 565px;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -36,29 +34,52 @@ body{
   margin: -1px;
 }
 
-header {
-  width: 1440px;
+header{
+  /* width: 1440px; */
   height: 114px;
-  padding:5px;
   background-color: var(--light-grey);
   color: var(--basic-black);
  }
 
+ /* гриды */
+
+ body{
+  display: grid;
+  grid-template-rows: 114px 1fr 565px;
+ }
+
+ .container {
+  width: 1160px;
+  margin: 0 auto;
+ }
+
  .main-navigation{
   display: grid;
-  grid-template-columns: 1fr 1fr 438px 1fr 1fr;
+  grid-template-columns: 200px 1fr 200px;
+  /* grid-template-rows: 114px; */
+
 }
 
-.main-navigation ul{
+.site-navigation{
   display: grid;
-  grid-column: 3/-3;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .basket{
-  grid-column: 5/-1 ;
+  grid-column: 3/4;
   grid-row: 1;
+  text-align: center;
 }
 
+.header-logo{
+  grid-column: 1/2;
+}
+
+.service-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 0;
+}
  .slides{
   background-color: var(--light-grey);
  }
@@ -111,6 +132,7 @@ li{
  font-weight: 500;
  line-height: 30px;
  text-transform: uppercase;
+ margin-top: 74px;
 }
 
 .nav-list:hover {
@@ -131,9 +153,7 @@ img {
 button{
  border: 0;
 }
-.services-item{
-  display: inline-block;
-}
+
 .services-item h3{
   text-transform: uppercase;
   align-items: center;
