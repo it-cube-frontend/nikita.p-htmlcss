@@ -45,7 +45,7 @@ header{
 
  body{
   display: grid;
-  grid-template-rows: 114px 1fr 565px;
+  grid-template-rows: 114px 1fr 1fr;
  }
 
  .container {
@@ -177,7 +177,6 @@ button{
   text-decoration: none;
   text-align: center;
   display: inline-block;
-
   padding-top: 17px;
 }
 
@@ -237,6 +236,7 @@ button{
   grid-template-columns: 1fr 360px;
 }
 
+
 .information h2{
  font-weight: 500;
  font-size: 45px;
@@ -254,17 +254,31 @@ button{
  text-transform: uppercase;
 }
 
+.achievement ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 0;
+  margin: 0;
+}
+
 .achievement-list p{
   list-style-type: none;
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
+  margin: 0;
 }
 
 .achievement-list h3{
  font-weight: normal;
  line-height: 18px;
  font-size: 16px;
+}
+
+.sponsors-list{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ padding: 0;
 }
 
 .sponsors{
@@ -280,6 +294,10 @@ button{
   opacity: 0.1;
 }
 
+map{
+ min-width: 1440px;
+}
+}
 .map-adds{
  width: 319px;
  height: 308px;
