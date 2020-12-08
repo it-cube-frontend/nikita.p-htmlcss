@@ -23,23 +23,23 @@
     </header>
     <main>
       <h1 class="visually-hidden">Дизайн студия Nerds</h1>
-      <section class="container">
-         <div class="slides visually-hidden">
-           <h2>Узнать больше</h2>
+      <section>
+         <div class="slides">
+           <h2 class="visually-hidden">Узнать больше</h2>
            <ul>
              <li class="slide">
                <h3>Долго, Дорого, <br>скрупулёзно.</h3>
                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
                <a>Узнать больше</a>
-                <img src="img/nerds-index-slide1 1.png" width="760" height="431" alt="Долго, Дорого, скрупулёзно">
+               <img src="img/nerds-index-slide1 1.png" width="760" height="431" alt="Долго, Дорого, скрупулёзно">
              </li>
-             <li class="slide">
+             <li hidden class="slide">
                <h3>Любим математику <br>как никто другой</h2>
                <p>Никакого креатива, только математические формулы для расчет идеальных пропорций</p>
                <a>Узнать больше</a>
                <img src="img/nerds-index-slide2 1.png" width="760" height="431" alt="любим математику как никто другой">
              </li>
-             <li class="slide">
+             <li hidden class="slide">
                <h3>Только ночь, <br>только хардкор</h2>
                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                <a>Узнать больше</a>
@@ -131,42 +131,46 @@
       </section>
     </main>
     <footer>
-      <section>
+      <section class="footer-map">
         <h2 class="visually-hidden">Как нас найти</h2>
         <img class="map" src="img/map1.png" alt="карта" width="1440" height="416">
         <div class="map-adds">
+          <div>
             <h2>NЁRDS DESIGN STUDIO</h2>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> <br>тел. +7 (812) 275-75-75</p>
             <button type="button">Напишите нам</button>
+          </div>
         </div>
       </section>
-      <ul class="s-network" class="container">
-        <li>
+      <div class="network">
+       <ul class="s-network" class="container">
+         <li>
+           <a href="">
+             <div class="s-network-list">
+               <img class="icon icon-vk" src="img/vk-icon.svg" width="26" height="15">
+             </div>
+           </a>
+         </li>
+         <li>
           <a href="">
             <div class="s-network-list">
-              <img class="icon icon-vk" src="img/vk-icon.svg" width="26" height="15">
+              <img class="icon icon-fb" src="img/fb-icon.svg" width="12" height="22">
             </div>
-          </a>
-        </li>
-        <li>
-         <a href="">
-           <div class="s-network-list">
-             <img class="icon icon-fb" src="img/fb-icon.svg" width="12" height="22">
-           </div>
-        </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="s-network-list">
-             <img class="icon icon-inst" src="img/insta-icon.svg" width="21" height="21">
-            </div>
-          </a>
-        </li>
-      </ul>
-     <div>
-       <strong class="str">Давайти дружить, это выгодно!</strong>
-       <p>скидка 10% для друзей из социальных сетей</p>
-    </div>
+         </a>
+         </li>
+         <li>
+           <a href="">
+             <div class="s-network-list">
+               <img class="icon icon-inst" src="img/insta-icon.svg" width="21" height="21">
+             </div>
+           </a>
+         </li>
+       </ul>
+       <div class="network-str">
+         <strong class="str">Давайти дружить, это выгодно!</strong>
+         <p>скидка 10% для друзей из социальных сетей</p>
+       </div>
+     </div>
    </footer>
   </body>
 </html>
