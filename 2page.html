@@ -2,28 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>нёрдс</title>
+    <title>магазин</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="secondpage">
     <header>
-      <nav>
+      <nav class="main-navigation container">
         <a href="index.html" class="header-logo">
-          <img src="img/nerds-logo.svg" alt="nerds">
+          <img src="img/nerds-logo.svg" alt="nerds" width="159.87" height="65.02">
         </a>
-        <ul class="main-navigation">
-         <li"><a class="nav-list" href="#">студия</a></li>
+        <ul class="site-navigation">
+         <li><a class="nav-list" href="#">студия</a></li>
          <li><a class="nav-list" href="#">клиенты</a></li>
          <li><a class="nav-list" href="2page.html">магазин</a></li>
          <li><a class="nav-list" href="#">контанты</a></li>
-         <li class="busket"><a href="#" class="nav-list"><img src="img/cart-icon.svg">корзина</a></li>
         </ul>
+        <a href="#" class="nav-list basket"><img src="img/cart-icon.svg" height="15" width="15">корзина</a>
       </nav>
     </header>
    <main>
      <div class="templates-shop">
-       <h1>Магазин готовых шаблонов</h1>
+       <h1 >Магазин готовых шаблонов</h1>
      </div>
 
      <section>
@@ -106,42 +106,46 @@
     </main>
 
     <footer>
-      <section>
+      <section class="footer-map">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <img src="img/map 1.png" alt="карта">
+        <img class="map" src="img/map1.png" alt="карта" width="1440" height="416">
         <div class="map-adds">
+          <div>
             <h2>NЁRDS DESIGN STUDIO</h2>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> <br>тел. +7 (812) 275-75-75</p>
             <button type="button">Напишите нам</button>
+          </div>
         </div>
       </section>
-      <ul class="s-network">
-        <li>
+      <div class="network">
+       <ul class="s-network" class="container">
+         <li>
+           <a href="">
+             <div class="s-network-list">
+               <img class="icon icon-vk" src="img/vk-icon.svg" width="26" height="15">
+             </div>
+           </a>
+         </li>
+         <li>
           <a href="">
             <div class="s-network-list">
-              <img class="icon icon-vk" src="img/vk-icon.svg" width="26" height="15">
+              <img class="icon icon-fb" src="img/fb-icon.svg" width="12" height="22">
             </div>
-          </a>
-        </li>
-        <li>
-         <a href="">
-           <div class="s-network-list">
-             <img class="icon icon-fb" src="img/fb-icon.svg" width="12" height="22">
-           </div>
-        </a>
-        </li>
-        <li>
-          <a href="">
-            <div class="s-network-list">
-             <img class="icon icon-inst" src="img/insta-icon.svg" width="21" height="21">
-            </div>
-          </a>
-        </li>
-      </ul>
-     <div>
-       <strong class="str">Давайти дружить, это выгодно!</strong>
-       <p>скидка 10% для друзей из социальных сетей</p>
-    </div>
+         </a>
+         </li>
+         <li>
+           <a href="">
+             <div class="s-network-list">
+               <img class="icon icon-inst" src="img/insta-icon.svg" width="21" height="21">
+             </div>
+           </a>
+         </li>
+       </ul>
+       <div class="network-str">
+         <strong class="str">Давайти дружить, это выгодно!</strong>
+         <p>скидка 10% для друзей из социальных сетей</p>
+       </div>
+     </div>
    </footer>
   </body>
 </html>
