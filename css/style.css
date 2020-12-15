@@ -24,6 +24,12 @@ body{
   line-height: 24px;
   font-style: normal;
   margin: 0;
+  display: grid;
+  grid-template-rows: 114px 1fr 690px;
+}
+
+.index{
+  margin-bottom: 80px;
 }
 
 .visually-hidden {
@@ -39,13 +45,6 @@ header{
   height: 114px;
   background-color: var(--light-grey);
   color: var(--basic-black);
- }
-
- /* гриды */
-
- body{
-  display: grid;
-  grid-template-rows: 114px 1fr 1fr;
  }
 
  .container {
@@ -336,10 +335,6 @@ button{
  display: grid;
 }
 
-footer{
-  margin-top: 80px;
-}
-
 .map {
   grid-column: 1/-1;
   grid-row: 1/-1;
@@ -451,24 +446,60 @@ grid-template-columns: repeat(3,1fr);
 
 /*2page*/
 
-.templates-shop{
-  background-color: var(--light-grey);
-  width: 1440;
-  height: 250px;
+.secondpage{
+  display: grid;
+  grid-template-rows:114px 1fr 690px;
+
 }
-.templates-shop h1{
+
+.templates-shop{
+  display:grid;
+  grid-template-columns: 540px 1fr;
+}
+
+.sp{
+  background-color: var(--light-grey);
+  height: 55px;
+  padding:98px 0;
+  grid-column: 1/3;
+}
+.sp h1{
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
-  margin:0;
+  margin: 0;
+}
 
+.template-filter{
+  margin-left:140px;
+  margin-top: 60px;
+}
+
+.filter-list{
+  display: grid;
+  grid-template-rows: 140px 1fr 164px;
+}
+
+.templates-list{
+  margin: 0;
+  display: grid;
+  grid-template-rows: repeat(3,620px);
+  grid-template-columns: repeat(2,360px);
+  column-gap: 40px;
+  row-gap: 30px;
+  padding: 0;
+}
+
+.sorting{
+  margin: 0;
 }
 
 .pp-text{
   background-color: var(--light-grey);
   width: 360px;
   height: 231px;
+  display: none;
 }
 
 .pp-text h3{
